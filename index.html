@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Comment Box Project</h1>
+
+      <form action="">
+        <p>
+          <label for="name">Name</label>
+          <input id="name" required type="text" placeholder="Name" />
+          <p class="nameInput hint hidden">Please provide your name</p>
+        </p>
+        <br />
+        <p>
+          <label for="email">Email</label>
+          <input id="email" required type="email" placeholder="Email" />
+          <p class="emailInput hint hidden">Please provide your email</p>
+        </p>
+        <br />
+        <p>
+          <label for="comment">Comments</label>
+          <textarea
+            name="comment"
+            id="getComment"
+            required
+            minlength="1" maxlength="139"
+            cols="25"
+            rows="2"
+            placeholder="Comments"
+          ></textarea>
+        </p>
+        <p class="countCharacters"></p>
+        <p class="commentHint hidden hint">
+          Please write 140 characters or less
+        </p>
+        <br />
+        <p>
+          <button class="submit">Submit</button>
+        </p>
+      </form>
+    </div>
+    <div class="commentsBox hidden">
+      <h2>Previous Comments</h2>
+    </div>
+  </body>
+</html>
